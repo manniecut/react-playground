@@ -1,7 +1,7 @@
 import React from 'react';
 import './Tooltip.css';
 
-function Tooltip(props) {
+/*function Tooltip(props) {
     return (
         <span className='Tooltip'>
             <span
@@ -15,7 +15,7 @@ function Tooltip(props) {
             </div>
         </span>
     )
-}
+}*/
 
 class TooltipClass extends React.Component {
     static defaultProps = {
