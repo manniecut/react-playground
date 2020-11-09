@@ -1,15 +1,16 @@
 import React from 'react';
-import Split from './composition/Split';
+//import Split from './composition/Split';
 import Tooltip from './composition/Tooltip';
-import TheDate from './state/TheDate';
-import Messages from './Messages';
-import Counter from './state/Counter'
-import HelloWorld from './state-drills/Helloworld';
-import Bomb from './state-drills/Bomb';
-import RouletteGun from './state-drills/RouletteGun';
-import Tabs from './state/Tabs'
-import Accordion from './state-drills/Accordion';
+//import TheDate from './state/TheDate';
+//import Messages from './Messages';
+//import Counter from './state/Counter'
+//import HelloWorld from './state-drills/Helloworld';
+//import Bomb from './state-drills/Bomb';
+//import RouletteGun from './state-drills/RouletteGun';
+//import Tabs from './state/Tabs'
+//import Accordion from './state-drills/Accordion';
 import './App.css';
+import DemonymApp from './demonymapp/demonymApp';
 
 const firstTooltip = (
   <Tooltip color='hotpink' message='tooltip message'>
@@ -49,6 +50,12 @@ const sections = [
 function App() {
   return (
     <main className='App'>
+      <DemonymApp />
+    </main>
+  )
+  /*
+  return (
+    <main className='App'>
       <section>
         <Split className='left' flexBasis={2}>
           This is the left Split section {firstTooltip}. blah blah blah blhalhalha
@@ -77,7 +84,7 @@ function App() {
       </Split>
       </section>
     </main>
-  );
+  );*/
 }
 
 export default App;
